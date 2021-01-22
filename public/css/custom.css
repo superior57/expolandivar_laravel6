@@ -204,7 +204,7 @@
     width: 100%;
 }
 .comming-event-body .head .star {
-    width: 100%;
+    min-width: 150px;
     text-align: end;
 }
 .star-yellow {
