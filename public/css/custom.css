@@ -266,6 +266,11 @@
     font-weight: 500 !important;
 }
 
+.classynav>ul {
+    display: flex;
+    align-items: center;
+}
+
 /* 
     for only desktop
 */
