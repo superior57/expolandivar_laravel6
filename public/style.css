@@ -543,9 +543,8 @@ textarea:invalid {
     height: auto;
     line-height: 1;
     color: #031B5E;
-    font-size: 14px;
-    font-weight: 600;
-    text-transform: uppercase; }
+    font-size: 16px;
+    font-weight: 600; }
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       .classy-navbar .classynav ul li a {
         padding: 30px 15px; } }

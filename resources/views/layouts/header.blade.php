@@ -1,4 +1,10 @@
 <header class="header-area">
+  <div class="session-notification" style="display: block;">
+    <span class="title">AHORA</span>
+    <a href="">
+      Lorem ipsum dolor sit amet, c sed diam nonummy
+    </a>
+  </div>
     <div class="container">
       <div class="classy-nav-container breakpoint-off">
         <nav class="classy-navbar justify-content-between" id="saasboxNav">
@@ -27,7 +33,7 @@
                   <a href="/">FAQ general</a>
                 </li>  
                 <li>
-                  <a href="#home">
+                  <a href="/" class="loginbtn">
                     <img width="50px" height="50px" src="{{ asset('img/core-img/user.png') }}" alt="User">
                     Luciano Renneti
                     <i class="fa fa-angle-down ml-15"></i>
@@ -37,11 +43,6 @@
                   </ul>
                 </li>     
               </ul>
-              <!-- Login Button-->
-              {{-- <div class="login-btn-area ml-4 mt-4 mt-lg-0">
-                <i class="fa fa-user-circle-o"></i>                
-                <a class="btn " href="#">Luciano Renneti</a>
-              </div> --}}
             </div>
           </div>
         </nav>

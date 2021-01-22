@@ -246,6 +246,26 @@
     animation-delay: .6s;
 }
 
+.session-notification {
+    background: var(--secondary-color);
+    color: #FFF;
+    text-align: center;
+    padding: 10px;
+}
+.session-notification .title {
+    font-size: 16px;
+}
+.session-notification a {
+    font-size: 14px;
+    padding-left: 5px;
+    color: #FFF;
+    text-decoration: underline;
+}
+.loginbtn {
+    color: var(--gray-normal-color) !important;
+    font-weight: 500 !important;
+}
+
 /* 
     for only desktop
 */
