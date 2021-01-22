@@ -52,7 +52,6 @@
     <script src="{{ asset('js/default/jquery.passwordstrength.js') }}"></script>
     <script src="{{ asset('js/default/mail.js') }}"></script>
     <script src="{{ asset('js/default/active.js') }}"></script>
-    <script src="{{ asset('js/dropzone.min.js') }}"></script>
 
     @yield('script')
   </body>
