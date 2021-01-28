@@ -73,17 +73,17 @@
 
 .input-rounded {
     background: #FFF;
-    border: 1px solid var(--gray-normal-color);
+    border: 1px solid #CACACA;
     border-radius: 30px;
     overflow: hidden;
 }
 .input-group {
-    transition: 2s;
+    transition: 1s;
 }
 .input-group:hover,
 .input-group:focus, 
 .input-group:active {
-    border-color: var(--primary-color) !important;
+    border-color: #86b7fe !important;
 }
 .input-rounded  * {
     border: 0 !important;
@@ -401,10 +401,21 @@ a.forgot-link:hover {
     line-height: 24px;
     padding-left: 30px;
 }
-
-.form-group input.form-control {
-    border-radius: 30px;
+.form-group>span {
     padding-left: 30px;
+    font-size: 16px;
+    line-height: 18px;
+    padding-bottom: 5px;
+}
+.form-control:active,
+.form-control:focus {
+    background-color: #00000015;
+}
+
+.form-control {
+    border-radius: 30px;
+    color: #5a5a5a;
+    transition: 1s;
 }
 .register-section .main-wrapper {
     max-width: 540px;
@@ -413,7 +424,13 @@ a.forgot-link:hover {
 .badge-danger {
     color: var(--red-normal-color);
 }
+.invalid-feedback {
+    padding-left: 30px;
+}
 
+.register-section .form-control {
+    padding-left: 30px;
+} 
 
 
 /* 
