@@ -1,77 +1,43 @@
-@extends('layouts.app')
+@extends('layouts.master')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
-
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
-
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
+<section class="register-section py-3">
+    <div class="w-100 d-flex">
+        <div class="w-100 m-auto p-3 main-wrapper">
+            <h3 class="w-100 text-center mb-2">Insripción</h3>
+            <div class="w-100 form-group mb-2">
+                <label for="name"><span class="badge-danger">*</span> Nombre</label>
+                <input type="text" class="form-control" placeholder="Luciano Renneti" id="name" name="name" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="email"><span class="badge-danger">*</span> Correo electrónico</label>
+                <input type="text" class="form-control" placeholder="email@email.com" id="email" name="email" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="phone"><span class="badge-danger">*</span> Celular</label>
+                <input type="text" class="form-control" placeholder="56960099" id="phone" name="phone" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="birthday"><span class="badge-danger">*</span> Fecha de nacimiento</label>
+                <input type="text" class="form-control" placeholder="10/12/1998" id="birthday" name="birthday" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="headquarters"><span class="badge-danger">*</span> Campus o sede</label>
+                <input type="text" class="form-control" placeholder="56960099" id="headquarters" name="headquarters" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="phone"><span class="badge-danger">*</span> Celular</label>
+                <input type="text" class="form-control" placeholder="56960099" id="phone" name="phone" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="phone"><span class="badge-danger">*</span> Celular</label>
+                <input type="text" class="form-control" placeholder="56960099" id="phone" name="phone" required>
+            </div>
+            <div class="w-100 form-group mb-2">
+                <label for="phone"><span class="badge-danger">*</span> Celular</label>
+                <input type="text" class="form-control" placeholder="56960099" id="phone" name="phone" required>
             </div>
         </div>
-    </div>
-</div>
+    </div>        
+</section>
 @endsection

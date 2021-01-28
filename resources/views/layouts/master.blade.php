@@ -24,7 +24,7 @@
       <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
     </div>
     <!-- Header Area-->
-    @include('layouts.header')
+    @yield('header')
 
     {{-- Page Content Wrapper --}}
     <div class="content-wrapper" id="content_wrapper">
