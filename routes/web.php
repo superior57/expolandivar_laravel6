@@ -20,6 +20,9 @@ Route::get('/', function () {
 Route::get('/my-agenda', function () {
     return view('auth.my-agenda');
 });
+Route::get('/welcome', function () {
+    return view('auth.welcome');
+});
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');

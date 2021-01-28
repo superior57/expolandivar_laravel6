@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    register    
+@endsection
+
 @section('content')
 <section class="register-section py-3">
     <div class="w-100 d-flex">

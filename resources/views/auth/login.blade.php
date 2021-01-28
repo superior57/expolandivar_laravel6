@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    login    
+@endsection
+
 @section('content')
 <section class="d-flex login-section">
     <div class="d-flex flex-wrap col-md-6 col-lg-4 p-5 login-wrapper">
