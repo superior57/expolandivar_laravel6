@@ -4,7 +4,7 @@
 <section class="register-section py-3">
     <div class="w-100 d-flex">
         <div class="w-100 m-auto p-3 main-wrapper">
-            <h3 class="w-100 text-center mb-2">Insripción</h3>
+            <h2 class="w-100 text-center mb-2 title">Insripción</h2>
             <form action="">
                 <div class="w-100 form-group mb-2">
                     <label for="name"><span class="badge-danger">*</span> Nombre</label>

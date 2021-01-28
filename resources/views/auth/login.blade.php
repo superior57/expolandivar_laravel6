@@ -22,7 +22,7 @@
                     <input type="text" class="form-control" placeholder="Contraseña">
                 </div>
                 <p class="w-100 text-center mb-5">
-                    ¿Olvidaste tu contraseña?  <a href="{{ url('/forgot') }}" class="forgot-link">Haz clic acá</a>
+                    ¿Olvidaste tu contraseña?  <a href="{{ url('/forgot') }}" class="yellow-link">Haz clic acá</a>
                 </p>
                 <div class="d-flex">
                     <a href="" class="btn btn-signup">

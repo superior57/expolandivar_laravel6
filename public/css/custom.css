@@ -37,6 +37,11 @@
 
 /* end scrollbar */
 
+h3,
+h2 {
+    color: var(--primary-color);
+}
+
 .classy-navbar .classynav ul li li a span:hover, .classy-navbar .classynav ul li li a span:focus {
     color: var(--secondary-color);
 }
@@ -361,11 +366,11 @@
 .login-wrapper p {
     color: #FFF;
 }
-a.forgot-link {
+a.yellow-link {
     color: var(--secondary-color);
     text-decoration: underline;
 }
-a.forgot-link:hover {
+a.yellow-link:hover {
     color: #FFF;
 }
 
@@ -414,7 +419,7 @@ a.forgot-link:hover {
 
 .form-control {
     border-radius: 30px;
-    color: #5a5a5a;
+    color: #999999;
     transition: 1s;
 }
 .register-section .main-wrapper {
@@ -432,6 +437,31 @@ a.forgot-link:hover {
     padding-left: 30px;
 } 
 
+.no-header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.agenda-section p{
+    color: #B3B3B3;
+}
+.hover-dark:hover {
+    color: var(--primary-color) !important;
+}
+
+.container-size-md {
+    max-width: 760px;
+}
+.container-size-sm {
+    max-width: 540px;
+}
+
+h2.title {
+    font-size: 50px;
+    line-height: 60px;
+}
+
 
 /* 
     for only desktop
@@ -446,6 +476,10 @@ a.forgot-link:hover {
     .pl-md-30 {
         padding-left: 30px;
     }
+    .agenda-section .comming-event-item .brief {
+        padding-right: 200px;
+    }
+    
 }
 
 /*

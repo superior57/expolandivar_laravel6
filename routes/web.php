@@ -17,6 +17,9 @@ Auth::routes();
 Route::get('/', function () {
     return view('home1');
 });
+Route::get('/my-agenda', function () {
+    return view('auth.my-agenda');
+});
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');
