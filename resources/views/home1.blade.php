@@ -11,7 +11,7 @@
 @section('content')
 <section class="py-5 hero-search-pan">
   <div class="text-center m-auto">
-    <h3 class="title mb-3">Expo 2021</h3>
+    <h2 class="title mb-3">Expo 2021</h2>
     <span class="subtitle px-5 mb-4">
       Encuentra información de tu campus, facultad o carrera de interés, a través de nuestro <br>
       buscador o ingresa a la sección directamente.

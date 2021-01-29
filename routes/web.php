@@ -23,6 +23,16 @@ Route::get('/my-agenda', function () {
 Route::get('/welcome', function () {
     return view('auth.welcome');
 });
+Route::get('/registcomp', function () {
+    return view('auth.registcomp');
+});
+Route::get('/eventcomp', function () {
+    return view('auth.eventcomp');
+});
+
+Route::get('/change-plan', function () {
+    return view('change-plan');
+});
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');

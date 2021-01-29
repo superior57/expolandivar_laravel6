@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+    welcome    
+@endsection
+
 @section('content')
 <section class="agenda-section no-header">
     <div class="w-100 p-3 px-md-5">

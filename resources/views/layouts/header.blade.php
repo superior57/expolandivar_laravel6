@@ -1,5 +1,5 @@
 <header class="header-area">
-  <div class="session-notification" style="display: block;">
+  <div class="session-notification" style="display: none;">
     <span class="title">AHORA</span>
     <a href="">
       Lorem ipsum dolor sit amet, c sed diam nonummy
