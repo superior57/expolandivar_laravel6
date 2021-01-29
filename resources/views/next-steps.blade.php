@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-    Chnage plan
+  next steps
 @endsection
 
 @section('header')
