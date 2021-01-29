@@ -33,6 +33,9 @@ Route::get('/eventcomp', function () {
 Route::get('/change-plan', function () {
     return view('change-plan');
 });
+Route::get('/next-steps', function () {
+    return view('next-steps');
+});
 
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');

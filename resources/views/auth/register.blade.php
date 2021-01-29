@@ -36,7 +36,7 @@
                     <span>
                         Podrás navegar a otras sedes luego de registrarte
                     </span>
-                    <select class="form-control" name="base_location" id="base_location" required>
+                    <select class="slim-select form-control" name="base_location" id="base_location" required>
                         <option value="1">Please select</option>
                         <option value="2">Ciudad de Guatemala</option>
                         <option value="3">Ciudad de Guatemala</option>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="w-100 form-group mb-2">
                     <label for="study_plan"><span class="badge-danger">*</span> Plan de Estudios (Pregrado / Posgrado)</label> <br>
-                    <select class="form-control" name="study_plan" id="study_plan" required>
+                    <select class="slim-select form-control" name="study_plan" id="study_plan" required>
                         <option value="1">Please select</option>
                         <option value="2">Pregrado</option>
                         <option value="3">Pregrado</option>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="w-100 form-group mb-2">
                     <label for="institution"><span class="badge-danger">*</span> Colegio o Institución</label> <br>
-                    <select class="form-control" name="institution" id="institution" required>
+                    <select class="slim-select form-control" name="institution" id="institution" required>
                         <option value="1">Please select</option>
                         <option value="2">Colegio Europeo Internacional</option>
                         <option value="3">Colegio Europeo Internacional</option>
@@ -60,11 +60,16 @@
                 </div>
                 <div class="w-100 form-group mb-2">
                     <label for="interest_careers"><span class="badge-danger">*</span> Elige 3 carreras de tu interés</label> <br>
-                    <select multiple class="form-control" name="interest_careers" id="interest_careers" required>
+                    <select multiple class="slim-select form-control" name="interest_careers" id="interest_careers" required>
+                        <option value="0">Please select</option>
                         <option value="1">Please select</option>
                         <option value="2">Ingeniería Industrial</option>
                         <option value="3">Medicina</option>
                         <option value="3">Administración de empresas</option>
+                        <option value="4">Administración de empresas</option>
+                        <option value="5">Administración de empresas</option>
+                        <option value="6">Administración de empresas</option>
+                        <option value="7">Administración de empresas</option>
                     </select>
                 </div>
                 <div class="w-100 form-group mb-2">

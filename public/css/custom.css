@@ -36,6 +36,37 @@
 }
 
 /* end scrollbar */
+/* select */
+.ss-main .ss-single-selected {
+    border: 0;
+    padding: 0;
+    height: 100%;
+}
+.ss-content {
+    margin-top: 18px;
+    width: calc(100% - 50px);
+}
+.ss-main .ss-single-selected .placeholder, .ss-main .ss-single-selected .placeholder * {
+    color: var(--gray-normal-color);
+}
+.ss-content .ss-list .ss-option.ss-disabled {
+    background-color: #00000015;
+    color: var(--gray-normal-color);
+}
+.ss-main .ss-multi-selected {
+    border: 0;
+    padding: 0;
+}
+.ss-main .ss-multi-selected  * {
+    padding: 0;
+}
+.ss-main .ss-multi-selected .ss-values .ss-disabled {
+    color: var(--gray-normal-color);
+}
+
+/* end select */
+
+
 h1,
 h2,
 h3,
@@ -89,11 +120,6 @@ h5 {
 }
 .input-rounded  * {
     border: 0 !important;
-}
-
-.form-control {
-    font-size: 16px;
-    line-height: 18px;
 }
 
 .contents_m {
@@ -416,6 +442,9 @@ a.yellow-link:hover {
     border-radius: 30px;
     color: #999999;
     transition: 1s;
+    font-size: 16px;
+    line-height: 18px;
+    padding: 10px 20px;
 }
 .register-section .main-wrapper {
     max-width: 540px;
@@ -519,6 +548,8 @@ p.subtitle {
 .eventcomp-section p {
     color: var(--gray-normal-color);
 }
+
+
 
 
 /* 

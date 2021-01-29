@@ -12,9 +12,12 @@
     </title>
     <!-- Favicon-->
     <link rel="icon" href="{{ asset('img/core-img/favicon.ico') }}">
+
+    {{-- library --}}
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.css" rel="stylesheet">
     <!-- Core Stylesheet-->
     <link rel="stylesheet" href="{{ asset('style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">    
     <script src="{{ asset('js/jquery.min.js') }}"></script>
     <script src="{{ asset('js/global.js') }}"></script>
   </head>
@@ -51,7 +54,18 @@
     <script src="{{ asset('js/default/cookiealert.js') }}"></script>
     <script src="{{ asset('js/default/jquery.passwordstrength.js') }}"></script>
     <script src="{{ asset('js/default/mail.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
     <script src="{{ asset('js/default/active.js') }}"></script>
+    <script>
+      
+    $(function() {
+        $('.slim-select').each(function() {
+            new SlimSelect({
+                select: this
+            });
+        });
+    });
+    </script>
 
     @yield('script')
   </body>
