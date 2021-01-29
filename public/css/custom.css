@@ -63,6 +63,25 @@
 .ss-main .ss-multi-selected .ss-values .ss-disabled {
     color: var(--gray-normal-color);
 }
+.ss-main .ss-single-selected .ss-arrow span {
+    /* border-color: var(--primary-color); */
+    border: 0;
+    background: linear-gradient(-45deg, var(--primary-color), 50%, #FFF 50%);
+    padding: 4px;
+}
+
+.ss-main .ss-multi-selected .ss-add .ss-plus {
+    background-color: var(--primary-color);
+}
+.ss-main .ss-multi-selected .ss-add .ss-plus::after{
+    background-color: var(--primary-color);
+}
+.ss-main .ss-multi-selected .ss-values .ss-value {
+    /* background-color: var(--secondary-color); */
+}
+.ss-content .ss-search {
+    display: none;
+}
 
 /* end select */
 
@@ -73,6 +92,9 @@ h3,
 h4,
 h5 {
     color: var(--primary-color);
+}
+p{
+    color: var(--gray-normal-color);
 }
 
 .classy-navbar .classynav ul li li a span:hover, .classy-navbar .classynav ul li li a span:focus {
@@ -548,7 +570,17 @@ p.subtitle {
 .eventcomp-section p {
     color: var(--gray-normal-color);
 }
-
+.text-primary {
+    color: var(--primary-color) !important;
+}
+.step-item .no-data {
+    padding: 50px 0;
+    display: flex;
+    border:2px dashed var(--gray-light-color);
+}
+.step-item .no-data p {
+    margin: auto;
+}
 
 
 
