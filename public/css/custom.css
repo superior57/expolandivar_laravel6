@@ -393,21 +393,19 @@ a.yellow-link:hover {
     top: 0;
     width: 100%;
 }
-.register-section label,
-.register-section h3 {
-    color: var(--primary-color);
-}
 
 .form-group label {
     font-size: 18px;
     line-height: 24px;
     padding-left: 30px;
+    color: var(--primary-color);
 }
 .form-group>span {
     padding-left: 30px;
     font-size: 16px;
     line-height: 18px;
     padding-bottom: 5px;
+    color: var(--gray-normal-color);
 }
 .form-control:active,
 .form-control:focus {
