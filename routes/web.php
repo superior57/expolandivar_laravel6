@@ -37,6 +37,12 @@ Route::get('/next-steps', function () {
     return view('next-steps');
 });
 
+Route::group(['prefix' => 'settings'], function() {
+    Route::get('/', function() {
+        return view('settings.index');
+    });
+});
+
 Route::group(['prefix' => 'admin', 'middleware' => ['auth', 'admin']], function () {
     Route::resource('/todo', 'Admin\TodoController');
 });
