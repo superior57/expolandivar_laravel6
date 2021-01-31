@@ -4,7 +4,7 @@
     <div class="row justify-content-between">
       <!-- Footer Widget Area-->
       <div class="col-12 col-sm-10 col-lg-3">
-        <div class="footer-widget-area mb-4"><a class="d-block mb-4" href="{{ url('/') }}"><img src="img/logo-white.png" alt=""></a>
+        <div class="footer-widget-area mb-4"><a class="d-block mb-4" href="{{ url('/') }}"><img src="{{ asset('img/logo-white.png') }}" alt=""></a>
           <p>
             La universas en su búsqueda de la verdad por medio 
             de sus funcones de investigación, docencia yproyección social, se compromete a contribuir al desarrollo integral y sostenible, transformando a la persona 

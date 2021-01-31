@@ -8,7 +8,7 @@
     <div class="container">
       <div class="classy-nav-container breakpoint-off">
         <nav class="classy-navbar justify-content-between" id="saasboxNav">
-          <!-- Logo--><a class="nav-brand mr-5 logo" href="{{ url('/') }}"><img src="img/logo-2.png" alt="Logo"></a>
+          <!-- Logo--><a class="nav-brand mr-5 logo" href="{{ url('/') }}"><img src="{{ asset('img/logo-2.png') }}" alt="Logo"></a>
           <!-- Navbar Toggler-->
           <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span><span></span></span></div>
           <!-- Menu-->

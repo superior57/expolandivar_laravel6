@@ -544,6 +544,9 @@ h2.title {
     padding: 5px;
     margin: auto;
 }
+.btn-circle-text i {
+    margin-right: -10px !important;
+}
 .btn-video-circle {
     border-radius: 50%;
 }
@@ -609,6 +612,12 @@ ul.list-compus>li {
     text-decoration: underline;
     list-style: revert;     
     padding: 5px 0;
+}
+ul.list-compus>li>a {
+    color: var(--gray-normal-color);
+}
+ul.list-compus>li:hover {
+    text-decoration: none;
 }
 ul.list-compus span {
     color: var(--gray-normal-color);
@@ -722,7 +731,7 @@ ul ul li {
     margin: auto;
     color: var(--primary-color);
     margin-left: 9px;
-    transition: 500ms;
+    transition: 1s;
 }
 #toggle_sidebar.collapsed .toggle-sidebar{
     margin: 0;    
@@ -732,6 +741,20 @@ ul ul li {
     transform: rotate(180deg);
     margin-left: auto;
 }
+.article-plus>i {
+    color: var(--red-normal-color);
+}
+.bg-title {
+    background: var(--primary-color);
+    padding: 15px 30px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.bg-title>span {
+    color: #FFF;
+}
+
 
 /* 
     for only desktop

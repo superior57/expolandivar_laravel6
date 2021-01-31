@@ -39,7 +39,39 @@ Route::get('/next-steps', function () {
 
 Route::group(['prefix' => 'settings'], function() {
     Route::get('/', function() {
-        return view('settings.index');
+        return redirect('/settings/faculty1');
+    });    
+    Route::group(['prefix' => 'events'], function() {
+        Route::get('/', function(){
+            return view('settings.events.1');
+        });
+    });
+    Route::group(['prefix' => 'faculty1'], function() {
+        Route::get('/', function(){
+            return view('settings.faculty1.index');
+        });
+        Route::get('/carrera1', function(){
+            return view('settings.faculty1.carrera1');
+        });
+        Route::get('/carrera2', function(){
+            return view('settings.faculty1.carrera2');
+        });
+    });
+    Route::group(['prefix' => 'integral-formation'], function() {
+        Route::get('/', function(){
+            return redirect('/settings/integral-formation/unite1');
+        });
+        Route::get('/unite1', function(){
+            return view('settings.integral-formation.unite1');
+        });
+    });
+    Route::group(['prefix' => 'faq'], function() {
+        Route::get('/', function(){
+            return redirect('/settings/faq/question1');
+        });
+        Route::get('/question1', function(){
+            return view('settings.faq.question1');
+        });
     });
 });
 
