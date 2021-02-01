@@ -44,7 +44,7 @@
     height: 100%;
 }
 .ss-content {
-    margin-top: 18px;
+    margin-top: 5px;
     width: calc(100% - 50px);
 }
 .ss-main .ss-single-selected .placeholder, .ss-main .ss-single-selected .placeholder * {
@@ -758,6 +758,10 @@ ul ul li {
 }
 .bg-title>span {
     color: #FFF;
+}
+
+.input-group.is-invalid {
+    border-color: var(--red-normal-color);
 }
 
 

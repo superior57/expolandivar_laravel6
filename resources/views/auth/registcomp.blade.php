@@ -10,7 +10,9 @@
         <div class="col-12 col-sm-12 col-md-6 d-flex py-5 align-items-center">
             <div class="w-100 thanks-wrapper">
                 <div class="w-100 mb-5">
-                    <img width="300" src="{{ asset('img/logo-2.png') }}" alt="Logo">
+                    <a href="{{ url('/') }}">
+                        <img width="300" src="{{ asset('img/logo-2.png') }}" alt="Logo">
+                    </a>
                 </div> 
                 <h2 class="w-100 title">¡Gracias por registrarte!</h2>
                 <p class="w-100 mb-3 subtitle">Este evento empieza el 28 de febrero 2021 a las 09:00 AM</p>

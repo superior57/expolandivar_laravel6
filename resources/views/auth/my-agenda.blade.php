@@ -9,12 +9,12 @@
     <div class="w-100 p-3 px-md-5">
         <div class="d-flex py-5 head">
             <div class="m-auto text-center container-size-md">
-                <h2 class="title">Mi agenda</h2>
+                <h2 class="title animated fadeIn">Mi agenda</h2>
                 <p>Ve todos los eventos que tendremos a lo largo de la Expo y <a href="" class="yellow-link hover-dark">selecciona los que sean de tu interés</a>, para recibir recordatorios a tu email y celular.</p>
             </div>
         </div>
         <div class="body">
-            <div class="comming-event-list  wow animated fadeInLeft">
+            <div class="comming-event-list">
                 <div class="scrollbox" style="max-height: 433px;">
                     {{-- comming event item --}}
                     <div class="comming-event-item">
@@ -117,7 +117,7 @@
         </div>
         <div class="footer">
             <div class="pt-4 text-end">
-                <a href="" class="btn btn-primary">Siguiente</a>
+                <a href="{{ url('welcome') }}" class="btn btn-primary animated fadeInRight">Siguiente</a>
             </div>
         </div>
     </div>

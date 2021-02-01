@@ -23,14 +23,14 @@
   </head>
   <body>
     <!-- Preloader-->
-    <div class="preloader" id="preloader">
+    <div class="preloader" id="preloader" style="display: none;">
       <div class="spinner-grow text-light" role="status"><span class="sr-only">Loading...</span></div>
     </div>
     <!-- Header Area-->
     @yield('header')
 
     {{-- Page Content Wrapper --}}
-    <div class="content-wrapper" id="content_wrapper">
+    <div class="content-wrapper animated fadeIn" id="content_wrapper">
         @yield('content')
         <!-- Footer Area-->
         @yield('footer')
@@ -58,14 +58,13 @@
     <script src="{{ asset('js/default/active.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script>
-      
-    $(function() {
-        $('.slim-select').each(function() {
-            new SlimSelect({
-                select: this
-            });
-        });
-    });
+      $(function() {      
+          $('.slim-select').each(function() {
+              new SlimSelect({
+                  select: this
+              });
+          });
+      });
     </script>
 
     @yield('script')

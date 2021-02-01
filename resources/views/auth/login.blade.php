@@ -15,11 +15,11 @@
                 </div>
                 <p class="font-1 font-weight-bold mb-4">Inicia sesión</p>
                 <div class="form-group w-100 mb-3">
-                    <div class="input-group input-rounded">
+                    <div class="input-group input-rounded @error('email') is-invalid @enderror">
                         <div class="input-group-prepend">
                             <span class="input-group-text form-control"><i class="fa fa-envelope-o"></i></span>
                         </div>
-                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Correo" id="email" name="email" required autofocus autocomplete="email">        
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Correo" value="{{ old('email') }}" id="email" name="email" required autofocus autocomplete="email">        
                     </div>
                     @error('email')
                         <span class="invalid-feedback" role="alert">
@@ -28,7 +28,7 @@
                     @enderror                     
                 </div>                
                 <div class="form-group w-100 mb-1">
-                    <div class="input-group input-rounded">
+                    <div class="input-group input-rounded @error('password') @enderror">
                         <div class="input-group-prepend">
                             <span class="input-group-text form-control"><i class="fa fa-key"></i></span>
                         </div>
