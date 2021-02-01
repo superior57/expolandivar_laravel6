@@ -92,5 +92,7 @@ Route::get('create-user', function() {
     $user->password = Hash::make('123456789');
     $user->email = 'admin@admin.com';
     $user->name = 'Admin';
+    $user->usertype = "admin";
     $user->save();
+    return redirect("/");
 });
