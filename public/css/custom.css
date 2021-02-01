@@ -312,6 +312,7 @@ p{
 .comming-event-body {
     padding-left: 20px;
     color: var(--gray-normal-color);
+    width: 100%;
 }
 .comming-event-item .head {
     display: flex;
@@ -461,7 +462,7 @@ a.yellow-link:hover {
 }
 .form-control:active,
 .form-control:focus {
-    background-color: #00000015;
+    background-color: #00000015 !important;
 }
 
 .form-control {
@@ -580,6 +581,10 @@ p.subtitle {
 }
 .comming-event-item .tool-group>a.add {
     color: var(--red-normal-color);
+}
+.eventcomp-section {
+    min-height: 100vh;
+    display: flex;
 }
 .eventcomp-section p {
     color: var(--gray-normal-color);
@@ -763,7 +768,9 @@ ul ul li {
 .input-group.is-invalid {
     border-color: var(--red-normal-color);
 }
-
+.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
+    background-color: var(--primary-color);
+}
 
 /* 
     for only desktop

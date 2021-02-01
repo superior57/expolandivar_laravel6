@@ -4,6 +4,28 @@
     regist completed  
 @endsection
 
+@php
+    $MONTH = [
+        '',
+        'enero',
+        'febrero',
+        'En marzo',
+        'abril',
+        'En Mayo',
+        'junio',
+        'En julio',
+        'agosto',
+        'septiembre',
+        'octubre',
+        'noviembre',
+        'diciembre'
+    ];
+    $now = \Carbon\Carbon::now();
+    $start_time = \Carbon\Carbon::create($event->start_time);   
+    $left_seconds = $now->diffInSeconds($start_time);
+    // dd($start_time->format('g:i A'));
+@endphp
+
 @section('content')
 <section class="registcomp-section no-header py-5 px-md-5 px-3">
     <div class="row">
@@ -15,8 +37,16 @@
                     </a>
                 </div> 
                 <h2 class="w-100 title">¡Gracias por registrarte!</h2>
-                <p class="w-100 mb-3 subtitle">Este evento empieza el 28 de febrero 2021 a las 09:00 AM</p>
-                <p class="w-100 mb-5 time">10:30:01</p>
+                <p class="w-100 mb-3 subtitle">Este evento empieza el {!! $start_time->day !!} de {!! $MONTH[$start_time->month] !!} {!! $start_time->year !!} a las {!! $start_time->format('g:i A') !!}</p>
+                {{-- countdown --}}
+                <p class="w-100 mb-5 time">
+                    <span id="evt_left_hours">00</span>
+                    <span class="time-flicker">:</span>
+                    <span id="evt_left_minutes">00</span>
+                    <span class="time-flicker">:</span>
+                    <span id="evt_left_seconds">00</span>
+                </p>
+                {{-- end countdown --}}
                 <p>Ve todos los eventos que tendremos a lo largo de la Expo y <a href="" class="yellow-link hover-dark">selecciona los que sean de tu interés</a>, para recibir recordatorios a tu email y celular.</p>
             </div>
         </div>
@@ -194,4 +224,23 @@
         </div>
     </div>
 </section>
+@endsection
+
+@section('script')
+<script>
+    let left_seconds = "{{ $left_seconds }}";
+
+    let lefttime_minute_interval = setInterval(() => {
+        if(left_seconds % 2 == 0) {
+            $('.time-flicker').css('color', "var(--secondary-color)");
+        } else {
+            $('.time-flicker').css('color', "transparent");
+        }
+        const { days, hours, minutes, seconds } = getDateTimeAttrFromSeconds(left_seconds);
+        $('#evt_left_hours').text(hours);
+        $('#evt_left_minutes').text(minutes);
+        $('#evt_left_seconds').text(seconds);
+        left_seconds --;      
+    }, 1000);
+</script>
 @endsection

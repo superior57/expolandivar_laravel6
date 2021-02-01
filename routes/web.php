@@ -22,17 +22,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::get('/home', function() {
         return view('home1');
     });
-    Route::get('/my-agenda', function () {
-        return view('auth.my-agenda');
-    });
+    Route::get('/my-agenda', 'MyagendaController@index');
     Route::get('/welcome', function () {
         return view('auth.welcome');
-    });
-    Route::get('/registcomp', function () {
-        return view('auth.registcomp');
-    });
-    Route::get('/eventcomp', function () {
-        return view('auth.eventcomp');
     });
     
     Route::get('/change-plan', function () {
