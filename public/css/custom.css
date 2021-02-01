@@ -104,9 +104,9 @@ p{
 .classy-navbar .classynav ul li a {
     color: var(--primary-color);
 }
-/* .classy-navbar .classynav ul li a.active {
+.classy-navbar .classynav ul li a.active {
     color: var(--secondary-color);
-} */
+}
 .content-wrapper {
     margin-top: 100px;
 }

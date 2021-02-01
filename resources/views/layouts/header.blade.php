@@ -10,7 +10,7 @@
         <nav class="classy-navbar justify-content-between" id="saasboxNav">
           <!-- Logo--><a class="nav-brand mr-5 logo" href="{{ url('/') }}"><img src="{{ asset('img/logo-2.png') }}" alt="Logo"></a>
           <!-- Navbar Toggler-->
-          <div class="classy-navbar-toggler"><span class="navbarToggler"><span></span><span></span><span></span><span></span></span></div>
+          <div class="classy-navbar-toggler"><span class="navbarToggler"></span></div>
           <!-- Menu-->
           <div class="classy-menu">
             <!-- close btn-->
@@ -27,7 +27,7 @@
                   <a href="{{ url('change-plan') }}" class="{{ Request::is('change-plan') ? 'active' : '' }}">Cambiar Campus</a>
                 </li>
                 <li>
-                  <a href="/">Agenda de Sesiones</a>
+                  <a href="{{ url('my-agenda') }}" class="{{ Request::is('my-agenda') || Request::is('welcome') || Request::is('registcomp') ? 'active' : '' }}">Agenda de Sesiones</a>
                 </li>
                 <li>
                   <a href="{{ url('settings/faq') }}" class="{{ Request::is('settings/faq*') ? 'active' : '' }}">FAQ general</a>
