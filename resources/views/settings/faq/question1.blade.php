@@ -10,7 +10,7 @@
 
 @section('content')
 @include('settings.layouts.searchbar')
-<div class="setting-mainsection py-5">
+<div class="setting-mainsection py-5" id="question1">
     {{-- sidebar --}}
     @include('settings.layouts.sidebar')
     {{-- end sidebar --}}
@@ -41,7 +41,7 @@
                             <span class="pl-3">email@email.com</span>
                         </p>
                     </div>
-                </div>                
+                </div>      
             </div>            
         </div>
     </div>

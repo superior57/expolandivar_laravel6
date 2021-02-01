@@ -35,7 +35,7 @@
         <!-- Footer Area-->
         @yield('footer')
     </div>    
-    <!-- All JavaScript Files-->
+    <!-- All JavaScript Files-->    
     <script src="{{ asset('js/popper.min.js') }}"></script>
     <script src="{{ asset('js/bootstrap.min.js') }}"></script>    
     <script src="{{ asset('js/default/classy-nav.min.js') }}"></script>
@@ -56,6 +56,7 @@
     <script src="{{ asset('js/default/mail.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
     <script src="{{ asset('js/default/active.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script>
       
     $(function() {

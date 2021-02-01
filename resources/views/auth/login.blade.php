@@ -8,38 +8,51 @@
 <section class="d-flex login-section">
     <div class="d-flex flex-wrap col-md-6 col-lg-4 p-5 login-wrapper">
         <div class="d-flex w-100 py-5 body">
-            <div class="w-100 m-auto d-flex flex-wrap justify-content-center">
+            <form action="{{ route('login') }}" method="post" class="w-100 m-auto d-flex flex-wrap justify-content-center">
+                @csrf
                 <div class="w-100 logo mb-5">
                     <img src="{{ asset('img/logo-white.png') }}" alt="Logo">
                 </div>
                 <p class="font-1 font-weight-bold mb-4">Inicia sesión</p>
-                <div class="input-group input-rounded mb-3">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text form-control"><i class="fa fa-envelope-o"></i></span>
+                <div class="form-group w-100 mb-3">
+                    <div class="input-group input-rounded">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text form-control"><i class="fa fa-envelope-o"></i></span>
+                        </div>
+                        <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Correo" id="email" name="email" required autofocus autocomplete="email">        
                     </div>
-                    <input type="text" class="form-control" placeholder="Correo">
-                </div>
-                <div class="input-group input-rounded mb-1">
-                    <div class="input-group-prepend">
-                        <span class="input-group-text form-control"><i class="fa fa-key"></i></span>
+                    @error('email')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>                        
+                    @enderror                     
+                </div>                
+                <div class="form-group w-100 mb-1">
+                    <div class="input-group input-rounded">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text form-control"><i class="fa fa-key"></i></span>
+                        </div>
+                        <input type="password" class="form-control @error('password') @enderror" placeholder="Contraseña" id="password" name="password" required autocomplete="current-password">
                     </div>
-                    <input type="text" class="form-control" placeholder="Contraseña">
+                    @error('password')
+                        <span class="invalid-feedback" role="alert">
+                            <strong>{{ $message }}</strong>
+                        </span>  
+                    @enderror
                 </div>
                 <p class="w-100 text-center mb-5">
                     ¿Olvidaste tu contraseña?  <a href="{{ url('/forgot') }}" class="yellow-link">Haz clic acá</a>
                 </p>
                 <div class="d-flex">
-                    <a href="" class="btn btn-signup">
-                        Iniciar sesión
-                    </a>
+                    <input type="submit" class="btn btn-signup" value="Iniciar sesión">
                 </div>
-            </div>
+            </form>
         </div>
         <div class="w-100 footer">
             <div class="footer-content pt-5">
                 <p>Inscríbete para poder ingresar</p>
                 <div class="d-flex">
-                    <a href="" class="btn btn-secondary">Inscribirme</a>
+                    <a href="{{ url('register') }}" class="btn btn-secondary">Inscribirme</a>
                 </div>
             </div>
         </div>

@@ -104,6 +104,9 @@ p{
 .classy-navbar .classynav ul li a {
     color: var(--primary-color);
 }
+/* .classy-navbar .classynav ul li a.active {
+    color: var(--secondary-color);
+} */
 .content-wrapper {
     margin-top: 100px;
 }
@@ -478,6 +481,8 @@ a.yellow-link:hover {
 }
 .invalid-feedback {
     padding-left: 30px;
+    display: block;
+    color: var(--red-normal-color) !important;
 }
 
 .register-section .form-control {

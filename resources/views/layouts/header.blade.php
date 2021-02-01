@@ -21,16 +21,16 @@
             <div class="classynav">
               <ul id="corenav">
                 <li>
-                  <a href="/">Home</a>
+                  <a href="{{ url('home') }}" class="{{ Request::is('home') ? 'active' : '' }}">Home</a>
                 </li>
                 <li>
-                  <a href="/">Cambiar Campus o Plan de Estudio</a>
+                  <a href="{{ url('change-plan') }}" class="{{ Request::is('change-plan') ? 'active' : '' }}">Cambiar Campus</a>
                 </li>
                 <li>
                   <a href="/">Agenda de Sesiones</a>
                 </li>
                 <li>
-                  <a href="/">FAQ general</a>
+                  <a href="{{ url('settings/faq') }}" class="{{ Request::is('settings/faq*') ? 'active' : '' }}">FAQ general</a>
                 </li>  
                 <li>
                   <a href="/" class="loginbtn">
@@ -39,7 +39,12 @@
                     <i class="fa fa-angle-down ml-15"></i>
                   </a>
                   <ul class="dropdown">
-                    <li><a href="/"><i class="fa fa-user"></i><span>User Profile</span></a></li>
+                    <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i><span>Logout</span></a></li>
+
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                      @csrf
+                    </form>
                   </ul>
                 </li>     
               </ul>
