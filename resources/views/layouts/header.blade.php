@@ -8,14 +8,14 @@
     <div class="container">
       <div class="classy-nav-container breakpoint-off">
         <nav class="classy-navbar justify-content-between" id="saasboxNav">
-          <!-- Logo--><a class="nav-brand mr-5 logo" href="{{ url('/') }}"><img src="{{ asset('img/logo-2.png') }}" alt="Logo"></a>
+          <!-- Logo--><a class="nav-brand mr-0 mr-lg-5 logo" href="{{ url('/') }}"><img src="{{ asset('img/logo-2.png') }}" alt="Logo"></a>
           <!-- Navbar Toggler-->
-          <div class="classy-navbar-toggler"><span class="navbarToggler"></span></div>
+          <div class="classy-navbar-toggler"><span class="navbarToggler"><i class="fa fa-bars"></i></span></div>
           <!-- Menu-->
           <div class="classy-menu">
             <!-- close btn-->
             <div class="classycloseIcon">
-              <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+              <div class="cross-wrap d-none"><span class="top"></span><span class="bottom"></span></div>
             </div>
             <!-- Nav Start-->
             <div class="classynav">

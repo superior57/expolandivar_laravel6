@@ -2,8 +2,8 @@
     <div class="m-auto container-size-md">
         <div class="w-100 d-flex justify-content-between mb-2 px-4">
             <div class="d-flex main">
-                <span class="text-secondary">Campus Central</span>
-                <span class="px-4 text-white">|</span>
+                <span class="text-white text-md-secondary">Campus Central</span>
+                <span class="px-1 px-md-4 text-white">|</span>
                 <span class="text-white">Pregrado</span>
             </div>
             <span class="text-secondary">Cambiar</span>

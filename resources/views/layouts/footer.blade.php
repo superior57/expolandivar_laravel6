@@ -3,9 +3,9 @@
   <div class="container">
     <div class="row justify-content-between">
       <!-- Footer Widget Area-->
-      <div class="col-12 col-sm-10 col-lg-3">
-        <div class="footer-widget-area mb-4"><a class="d-block mb-4" href="{{ url('/') }}"><img src="{{ asset('img/logo-white.png') }}" alt=""></a>
-          <p>
+      <div class="col-12 col-sm-10 col-lg-3 footer-widget-area-logo">
+        <div class="footer-widget-area mb-4"><a class="d-block mb-4" href="{{ url('/') }}"><img width="250" src="{{ asset('img/logo-white.png') }}" alt=""></a>
+          <p class="text-justify">
             La universas en su búsqueda de la verdad por medio 
             de sus funcones de investigación, docencia yproyección social, se compromete a contribuir al desarrollo integral y sostenible, transformando a la persona 
             y la sociedad hacia dimensiones cada vez más humanas, justas, inclusivas y libres
@@ -13,7 +13,7 @@
           <div class="d-flex justify-content-between">
             <div class="footer-social-icon d-flex align-items-center">
               <a href="#" data-toggle="tooltip" data-placement="top" title="Facbook"><i class="fa fa-sign-out"></i></a>
-              <a href="#" data-toggle="tooltip" data-placement="top" title="Facbook"><i class="fa fa-facebook-square"></i></a>
+              <a href="#" data-toggle="tooltip" data-placement="top" title="Facbook"><i class="fa fa-facebook-official"></i></a>
               <a href="#" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram"></i></a>
               <a href="#" data-toggle="tooltip" data-placement="top" title="Linkedin"><i class="fa fa-whatsapp"></i></a>
             </div>
@@ -24,8 +24,8 @@
         </div>
       </div>
       <!-- Footer Widget Area-->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 pl-md-30">
-        <div class="footer-widget-area mb-4">
+      <div class="col-12 col-md-4 col-lg-3 pl-lg-3 pl-xl-5">
+        <div class="footer-widget-area mb-2">
           <ul>
             <li><a href="#" target="_blank">Cambiar Campus o Plan de Estudio</a></li>
             <li><a href="#" target="_blank">Agenda de Sesiones</a></li>
@@ -35,8 +35,8 @@
         </div>
       </div>
       <!-- Footer Widget Area-->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-        <div class="footer-widget-area mb-4">
+      <div class="col-12 col-md-4 col-lg-3 ">
+        <div class="footer-widget-area mb-2">
           <ul>
             <li><a href="#" target="_blank">Facultad de Arquitectura y Diseño</a></li>
             <li><a href="#" target="_blank">Facultad de Ciencias ambientales y Agrícolas</a></li>
@@ -47,8 +47,8 @@
         </div>
       </div>
       <!-- Footer Widget Area-->
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 ">
-        <div class="footer-widget-area mb-4">
+      <div class="col-12 col-md-4 col-lg-3 mb-5">
+        <div class="footer-widget-area">
           <ul>
             <li><a href="#" target="_blank">Facultad de Ingeniería</a></li>
             <li><a href="#" target="_blank">Facultad de Ciencias Econímicas y Empresariales</a></li>

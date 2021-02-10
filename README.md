@@ -1,10 +1,10 @@
-# laravel-6-crud
-Laravel simple Todo CRUD(Create, Read, Update and Delete) application using laravel inbuild authentication. Here is a step by step guide to install it.
+Initializing project
 
-## Setup Guide
+
+## Setup Guide For Run Project
 Step 1: Clone this project
 ```
-git clone https://github.com/ckpanchal/laravel-crud.git
+git clone git@gitlab.com:luisfergago/expo-landivar-2021-frontend.git
 ```
 
 Step 2: Install project dependencies using composer.
@@ -22,7 +22,7 @@ Step 4: Configure database credentials in .env file.
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=lara-crud
+DB_DATABASE=expolandivar_db
 DB_USERNAME=root
 DB_PASSWORD=
 ```
@@ -44,10 +44,22 @@ php artisan key:generate
 
 Step 8: Open browser and navigate http://127.0.0.1:8000
 
+
 If everything works it will open welcome screen in browser
 
-## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
+## Setup Guide For Run Dev
+
+After done above instruction
+
+Step 1: Install npm dependencies using yarn.
+```
+npm i -g yarn
+yarn
+```
+
+Step 2: Run yarn watch command to watching Vue components.
+```
+yarn watch
+```
+

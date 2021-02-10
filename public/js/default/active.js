@@ -395,4 +395,17 @@
         });
     }
 
+    $('.video-bg').height($('.video-bg').width() * 9 / 16);
+
+    // if ($.fn.owlCarousel) {        
+    //     $('.history-card-carousel').owlCarousel({
+    //         items: 1,
+    //         loop: true,
+    //         navigation: false,
+    //         dots: false,
+    //         autoplayTimeout: 3000,
+    //         autoplay: true
+    //     });
+    // }
+
 })(jQuery);

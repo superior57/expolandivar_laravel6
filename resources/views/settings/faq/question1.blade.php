@@ -10,21 +10,24 @@
 
 @section('content')
 @include('settings.layouts.searchbar')
-<div class="setting-mainsection py-5" id="question1">
+<div class="setting-mainsection py-0 py-md-5" id="question1">
     {{-- sidebar --}}
     @include('settings.layouts.sidebar')
     {{-- end sidebar --}}
     <div class="main-wrapper">
-        <div class="w-100 d-flex">
-            <a href="#" id="toggle_sidebar" class="">
+        <div class="w-100 d-none d-lg-flex">
+            <a href="#" id="toggle_sidebar" class="toggle-sidebar-wrap sidebar-toggler">
                 <div class="toggle-sidebar">
                     <i class="fa fa-caret-left"></i>
                 </div>
             </a>
         </div>
         <div class="px-3 px-md-5">
-            <div class="w-100 header">
-                <h2 class="title">Pregunta 1</h2>
+            <div class="w-100 header d-flex flex-wrap flex-md-nowrap">
+                <div class="title-wrap w-100">
+                    <h2 class="title">Pregunta 1</h2>
+                </div>
+                
                 {{-- toolbar --}}
                 @include('settings.layouts.toolbar')
                 {{-- end toolbar --}}

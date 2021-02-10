@@ -6,7 +6,7 @@
 
 @section('content')
 <section class="d-flex login-section">
-    <div class="d-flex flex-wrap col-md-6 col-lg-4 p-5 login-wrapper">
+    <div class="d-flex flex-wrap col-md-6 col-lg-5 col-xl-4 p-3 p-md-5 overflow-auto login-wrapper">
         <div class="d-flex w-100 py-5 body">
             <form action="{{ route('login') }}" method="post" class="w-100 m-auto d-flex flex-wrap justify-content-center">
                 @csrf
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class="col-md-6 col-lg-8 d-flex">
+    <div class="col-md-6 col-lg-7 col-xl-8 d-none d-md-flex">
         <div class="m-auto">  
             <div class="">
                 <img width="400" src="{{ asset('img/logo-2.png') }}" alt="Logo">

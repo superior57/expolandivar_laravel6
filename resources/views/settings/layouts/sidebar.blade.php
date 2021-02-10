@@ -1,7 +1,10 @@
-<nav id="sidebar" class="pt-3 ">
+<nav id="sidebar" class="pt-3">
+    <div class="d-block d-md-none text-end close-sidebar">
+        <a href="#"><span><i class="fa fa-close"></i></span></a>
+    </div>
     <ul class="list-unstyled">
         {{-- <p>Dummy Heading</p> --}}
-        <li class="active">
+        <li class="">
             <a data-bs-toggle="collapse" role="button" href="#sub_content1" aria-expanded="{{Request::is('settings/events*') ? 'true' : 'false'}}"
                 aria-controls="sub_content1" class="dropdown-toggle"><i class="dropdown-ico"></i>Agenda de sesiones
                 especiales</a>

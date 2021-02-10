@@ -96,3 +96,26 @@ Route::get('create-user', function() {
     $user->save();
     return redirect("/");
 });
+
+// for development env
+Route::group(['prefix' => 'test'], function () {
+    Route::get('my-agenda', function() {
+        return view('auth.my-agenda');
+    });   
+    Route::get('registcomp', function() {
+        $event = \App\Event::find(1);
+
+        return view('auth.registcomp', [
+            'event' => $event
+        ]);
+    }); 
+    Route::get('eventcomp', function() {
+        $event_list = \App\Event::get();
+        $session = \App\Session::find(1);
+
+        return view('auth.eventcomp', [
+            'event_list' => $event_list,
+            'session' => $session
+        ]);
+    }); 
+});

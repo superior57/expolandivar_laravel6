@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-<section class="change-plan py-5">
+<section class="change-plan py-5 px-3">
   <h2 class="title text-center mb-5">Cambiar campus o plan de estudio</h2>
   <div class="w-100 container-size-sm m-auto">
     <div class="w-100 form-group mb-2">

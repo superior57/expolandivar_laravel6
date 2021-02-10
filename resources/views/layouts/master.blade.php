@@ -54,7 +54,7 @@
     <script src="{{ asset('js/default/cookiealert.js') }}"></script>
     <script src="{{ asset('js/default/jquery.passwordstrength.js') }}"></script>
     <script src="{{ asset('js/default/mail.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.27.0/slimselect.min.js"></script>    
     <script src="{{ asset('js/default/active.js') }}"></script>
     <script src="{{ asset('js/app.js') }}"></script>
     <script>

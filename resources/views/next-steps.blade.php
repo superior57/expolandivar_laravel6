@@ -17,7 +17,7 @@
         <h5 class="mb-3">1. Confirma el Campus/Sede y Plan de Estudios del cual deseas recibir información</h5>
         <div class="body">
           <div class="row">
-            <div class="col-12 col-md-6 col-lg-5 col-xl-4">
+            <div class="col-12 col-md-6 col-lg-5 col-xl-4 mb-3">
               <div class="w-100 form-group mb-2">
                 <label for="base_location">Campus o sede</label>
                 <select class="slim-select form-control" name="base_location" id="base_location" required>
@@ -60,7 +60,7 @@
           </div>
         </div>
       </div>
-      <div class="w-100 text-end">
+      <div class="w-100 text-center text-md-end">
         <a href="" class="btn btn-primary">Enviar info</a>
       </div>
   </div>  

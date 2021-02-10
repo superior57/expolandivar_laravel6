@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="d-flex body">
-            <div class="m-auto d-flex container-size-lg">
+            <div class="m-auto d-flex container-size-lg w-100">
                 <div class="video-bg d-flex animated fadeIn" style="height: 500px;">   
                     <a href="" class="m-auto btn-video-circle">
                         <div class="bg-btn-circle">
@@ -28,7 +28,7 @@
             </div>             
         </div>
         <div class="footer">
-            <div class="pt-4 text-end">
+            <div class="pt-4 text-center text-lg-end">
                 <a href="{{ url('registcomp') }}" class="btn btn-primary animated fadeInRight">Siguiente</a>
             </div>
         </div>

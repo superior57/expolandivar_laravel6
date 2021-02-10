@@ -44,7 +44,7 @@
     height: 100%;
 }
 .ss-content {
-    margin-top: 5px;
+    margin-top: 10px;
     width: calc(100% - 50px);
 }
 .ss-main .ss-single-selected .placeholder, .ss-main .ss-single-selected .placeholder * {
@@ -313,6 +313,7 @@ p{
     padding-left: 20px;
     color: var(--gray-normal-color);
     width: 100%;
+    position: relative;
 }
 .comming-event-item .head {
     display: flex;
@@ -402,7 +403,7 @@ p{
 
 .login-wrapper {
     height: 100%;
-    max-width: 663px;
+    max-width: 500px;
     background-color: var(--primary-color);
 }
 .logo {
@@ -452,6 +453,8 @@ a.yellow-link:hover {
     line-height: 24px;
     padding-left: 30px;
     color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 2px;
 }
 .form-group>span {
     padding-left: 30px;
@@ -471,7 +474,7 @@ a.yellow-link:hover {
     transition: 1s;
     font-size: 16px;
     line-height: 18px;
-    padding: 10px 20px;
+    padding: 10px 30px;
 }
 .register-section .main-wrapper {
     max-width: 540px;
@@ -521,7 +524,6 @@ a.yellow-link:hover {
 h2.title {
     line-height: 60px;
     font-size: 56px;
-    /* font-weight: bold; */
     width: 100%;
 }
 
@@ -640,6 +642,7 @@ ul.list-compus span {
 }
 .setting-mainsection .main-wrapper {
     transition: 1s;
+    width: 100%;
 }
 
 /* sidebar */
@@ -656,6 +659,22 @@ ul.list-compus span {
     padding-left: 15px;
     border-right: 1px solid var(--gray-light-color);
     margin-top: 35px;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    margin: 2px 0;
+    background-color: #ECECEC;
+}
+  
+#sidebar::-webkit-scrollbar {
+    width: 3px;
+    height: 3px;
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: #80808057;
 }
 
 #sidebar.collapsed {
@@ -693,6 +712,7 @@ a[aria-expanded="true"] .dropdown-ico::before {
 }
 .dropdown-ico {
     padding-right: 15px;
+    position: relative;
 }
 .dropdown-ico::before {
     content: '';
@@ -743,11 +763,14 @@ ul ul li {
     margin-left: 9px;
     transition: 1s;
 }
-#toggle_sidebar.collapsed .toggle-sidebar{
+.toggle-sidebar-wrap {
+    /* margin-left: -15px; */
+}
+.toggle-sidebar-wrap.collapsed .toggle-sidebar{
     margin: 0;    
 }
 
-#toggle_sidebar.collapsed .toggle-sidebar i {
+.toggle-sidebar-wrap.collapsed .toggle-sidebar i {
     transform: rotate(180deg);
     margin-left: auto;
 }
@@ -771,11 +794,62 @@ ul ul li {
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
     background-color: var(--primary-color);
 }
+.fa-plus-square-o {
+    display: none;
+}
+#sidebar>ul>li {
+    transition: 400ms;
+}
+#sidebar>ul>li>ul {
+    transition: 400ms;
+}
+.navbarToggler {
+    font-size: 30px;
+    color: var(--primary-color);
+}
+.history-carousel:after {
+    content: 'flickity';
+    display: none;
+}
+.input-group-text.form-control {
+    padding: 10px 15px;
+}
+[class*="input-group"] .form-control {
+    padding-left: 15px !important;
+}
+.text-gray {
+    color: var(--gray-normal-color);
+}
+.sidebar-toggler span {
+    cursor: pointer;
+}
+.sidebar-toggler {
+    /* display: none; */
+}
+.close-sidebar {
+    padding-right: 18px;
+}
+.close-sidebar span{
+    font-size: 20px;
+}
+.content-wrapper.show-modal {
+    position: relative;
+}
+.content-wrapper.show-modal::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #000000a1;
+}
 
 /* 
     for only desktop
 */
 @media (min-width: 450px) {
+    
     .mr-md-30 {
         margin-right: 30px;
     }
@@ -787,6 +861,19 @@ ul ul li {
     }
     .agenda-section .comming-event-item .brief {
         padding-right: 200px;
+    }   
+    .text-md-secondary {
+        color: var(--secondary-color) !important;
+    }
+    
+}
+@media (min-width: 768px) {
+    .history-carousel:after {
+        content: '';
+      }
+    .history-carousel {
+        display: flex;
+        flex-wrap: wrap;
     }
     
 }
@@ -794,8 +881,129 @@ ul ul li {
 /*
     for only mobile
 */
-@media (max-width: 450px) {
+@media (max-width: 450px) {    
+    #scrollUp {
+        display: none !important ;
+    }
+    .middle-signup-section h3 {
+        font-size: 22px;
+    }    
+    .unite-list {
+        padding-left: 0;
+    }   
+    .footer-area .footer-social-icon a  {
+        font-size: 2rem;
+    }
+    h2.title {
+        font-size: 42px;
+    }
+    h3 {
+        font-size: 1.1rem;
+    }
+    .setting-searchbar .main span {
+        font-size: 17px;
+    }
+    
+
+}
+@media (max-width: 768px) {
+    .login-wrapper {
+        max-width: 100%;
+        width: 100%;
+    }
+    .comming-event-item {
+        padding-bottom: 50px;
+    }
+    .comming-event-item .date {
+        width: auto;
+    }
+    .comming-event-body .head a {
+        position: absolute;
+        bottom: -30px;
+        right: 0;
+    }
+    .comming-event-list {
+        padding-left: 0;
+    }    
     .content-wrapper {
         margin-top: 60px;
+    }
+    .hero-search-pan .body {
+        width: 100%;
+    }
+    .carousel-cell {
+        width: 85%;
+    }
+    .breakpoint-on .classy-navbar .classy-menu {
+        top: 60px !important;
+    }
+    .toolbar .social-text {
+        display: none;
+    }
+    .toolbar .fa {
+        font-size: 1.5rem;
+    }
+    .toolbar  {
+        border-bottom: 1px solid var(--gray-light-color);
+        margin-left: -1rem;
+        margin-right: -1rem;
+        width: calc(100% + 2rem) !important;
+        padding: 0 1rem;
+    }
+    
+    
+    
+}
+
+@media (max-width: 995px) {
+    .classynav>ul {
+        display: block;
+    }
+    .nav-brand.logo {
+        margin-right: 0;
+        text-align: center;
+        width: 100%;
+    }
+    .nav-brand.logo img {
+        width: 200px;
+    }
+
+    .breakpoint-on .classy-navbar .classy-menu {
+        width: 100%;
+        height: auto;
+        top: 80px;
+        height: auto;
+        overflow: auto;
+        left: 0;
+        z-index: 99;
+        transition: 500ms;
+        transition: height 0.4s linear;
+        max-height: 0;
+        transition: max-height 1s;
+    }
+    .classycloseIcon {
+        display: none;
+    }
+    .breakpoint-on .classynav {
+        padding: 0;
+        margin: 0;
+    }
+    .breakpoint-on .classy-navbar .classy-menu.menu-on {
+        max-height: 100%;
+    }
+    .breakpoint-on .classynav > ul > li > a {
+        background-color: #FFF;
+    }
+    .footer-widget-area-logo {
+        order: 4;
+    }
+    #sidebar {
+        position: fixed;
+        background: #FFF;
+        top: 25px;
+        left: -100%; 
+    }
+    #sidebar.menu_on {
+        left: 0;
     }
 }
